@@ -7,4 +7,6 @@ While searching for a sane way to report by Site (no Jamf does not expose this) 
 on using configuration profiles to make the values of Jamf Variables (https://docs.jamf.com/jamf-pro/administrator-guide/Computer_Configuration_Profiles.html) available to scripts using the /usr/bin/defaults command line tool.  I created a JSON template for a macOS configuration profile that has all the Jamf Variable pre-populated.  NOTE: for EXTENTIONATTRIBUTE_# the number will need to be added to the string like EXTENTIONATTRIBUTE_1.  The Jamf Pro web interface allows adding attributes to the custom schema.
 
 ## 2) com.twocanoes.xcreds
-  Needs finishing
+  This is an example JSON manifest template for the Twocanoes XCreds software (https://twocanoes.com/products/mac/xcreds/) which implements Cloud Login and password sync for macOS. Remember to remove empty properties that will not be set when imported into Jamf Pro.
+  
+  
