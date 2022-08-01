@@ -56,84 +56,112 @@
         "verifyPassword": {
             "type": "boolean",
             "title": "Verify Cloud Password",
-            "default": false,
+            "default": true,
             "description": "Show prompt to verify cloud password before setting keychain and login.",
             "property_order": 45
+        },
+        "shouldShowVersionInfo": {
+            "type": "boolean",
+            "title": "Show Version and Build Number",
+            "default": true,
+            "description": "Show the version number and build number in the lower left corner of XCreds Login.",
+            "property_order": 50
+        },
+        "shouldShowSupportStatus": {
+            "type": "boolean",
+            "title": "Show Support Status Message",
+            "default": true,
+            "description": "Show message in XCreds Login reminding people to buy support.",
+            "property_order": 55
+        },
+        "shouldShowConfigureWifiButton": {
+            "type": "boolean",
+            "title": "Show Configure WiFi",
+            "default": true,
+            "description": "Show Configure WiFi button in XCreds Login.",
+            "property_order": 60
+        },
+        "shouldShowMacLoginButton": {
+            "type": "boolean",
+            "title": "Show Mac Login Window button",
+            "default": true,
+            "description": "Show the Mac Login Window button in XCreds Login.",
+            "property_order": 65
         },
         "shouldSetGoogleAccessTypeToOffline": {
             "type": "boolean",
             "title": "Request Google Refresh Token",
             "default": false,
             "description": "When using Google IdP, a refresh token may need be requested in a non-standard way.",
-            "property_order": 50
+            "property_order": 70
         },
         "showDebug": {
             "type": "boolean",
             "title": "Show Debug Message",
             "default": false,
             "description": "Show debug local notifications.",
-            "property_order": 55
+            "property_order": 75
         },
         "shouldShowQuitMenu": {
             "type": "boolean",
             "title": "Show Quit Menu Item",
             "default": true,
             "description": "Show Quit Menu Item in the menu.",
-            "property_order": 60
+            "property_order": 80
         },
         "shouldShowPreferencesOnStart": {
             "type": "boolean",
             "title": "Show Preferences on Startup",
             "default": false,
             "description": "If no settings are specified, preferences will not be shown on startupu",
-            "property_order": 65
+            "property_order": 85
         },
         "CreateAdminUser": {
             "type": "boolean",
             "title": "Create User as Admin",
             "default": false,
             "description": "When set to true and the user account is created, the user will be a local admin.",
-            "property_order": 70
+            "property_order": 90
         },
         "EnableFDE": {
             "type": "boolean",
             "title": "Enable Full Disk Encryption (FDE)",
             "default": false,
             "description": "Enabled FDE enabled at first login on APFS disks.",
-            "property_order": 75
+            "property_order": 95
         },
         "EnableFDERecoveryKey": {
             "type": "boolean",
             "title": "Save PRK",
             "default": false,
             "description": "Save the Personal Recovery Key (PRK) to disk for the MDM Escrow Service to collect",
-            "property_order": 80
+            "property_order": 100
         },
         "EnableFDERecoveryKeyPath": {
             "type": "string",
             "title": "FDE Recovery Key Path",
             "description": "Specify a custom path for the recovery key",
-            "property_order": 85
+            "property_order": 105
         },
         "EnableFDERekey": {
             "type": "boolean",
             "title": "Enable FDE Rekey",
             "default": false,
             "description": "Rotate the Personal Recovery Key (PRK)",
-            "property_order": 90
+            "property_order": 110
         },
         "shouldShowAboutMenu": {
             "type": "boolean",
             "title": "Show About Menu",
             "default": true,
             "description": "Show the About Menu",
-            "property_order": 95
+            "property_order": 115
         },
         "passwordChangeURL": {
             "type": "string",
             "title": "Password Change URL for Menu",
             "description": "Add a menu item for changing the password that will open this URL when the menu item is selected.",
-            "property_order": 100
+            "property_order": 120
         }
     }
 }
