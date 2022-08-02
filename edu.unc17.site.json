@@ -1,0 +1,37 @@
+{
+  "title": "Jamf Site Variables (edu.unc17.site)",
+  "description": "Jamf Site Variables in a custom profile by Everette_Allen@ncsu.edu.Read /usr/bin/defaults read /Library/Managed Preferences/edu.unc17.site",
+  "options": {
+    "remove_empty_properties": true
+  },
+    "Site Name": {
+      "title": "Site Name",
+      "description": "The name of the JAMF Site the device is in",
+      "type": "string",
+      "default": "$SITENAME",
+      "options": {
+        "infoText": "Key name: Jamf Site Name"
+      },
+      "links": [
+        {
+          "rel": "Documentation",
+          "href": "https://docs.jamf.com/10.39.0/jamf-pro/documentation/Computer_Configuration_Profiles.html"
+        }
+      ]
+    },
+    "Site ID": {
+      "title": "Site ID",
+      "description": "The ID number of the JAMF Site the device is in",
+      "type": "string",
+      "default": "$SITEID",
+      "options": {
+        "infoText": "Key name: Jamf Site ID Number"
+      },
+      "links": [
+        {
+          "rel": "Documentation",
+          "href": "https://docs.jamf.com/10.39.0/jamf-pro/documentation/Computer_Configuration_Profiles.html"
+        }
+      ]
+    }
+}
