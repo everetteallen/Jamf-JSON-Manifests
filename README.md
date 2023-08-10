@@ -8,5 +8,9 @@ This is an example JSON manifest template for the Twocanoes XCreds software (htt
 ## 2) jamf-vars-manifest
 While searching for a sane way to report by Site (no Jamf does not expose this) I saw this page https://macnotes.wordpress.com/2022/01/14/device-specific-parameters-for-jamf-pro-script-policies/
 on using configuration profiles to make the values of Jamf Variables (https://docs.jamf.com/jamf-pro/administrator-guide/Computer_Configuration_Profiles.html) available to scripts using the /usr/bin/defaults command line tool.  I created a JSON template for a macOS configuration profile that has all the Jamf Variable pre-populated.  NOTE: for EXTENTIONATTRIBUTE_# the number will need to be added to the string like EXTENTIONATTRIBUTE_1.  The Jamf Pro web interface allows adding attributes to the custom schema.
+
+## 3) edu.ncsu.confboard.json
+ConfBoard is free-form digital signage for iOS, tvOS, and macOS. See details at https://go.ncsu.edu/confboard
+This template configures ConfBoard settings on macOS
   
   
