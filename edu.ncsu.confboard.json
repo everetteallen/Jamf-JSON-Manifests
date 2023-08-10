@@ -1,0 +1,100 @@
+{
+  "title": "ConfBoard (edu.ncsu.confboard)",
+  "description": "ConfBoard in a custom profile by Everette_Allen@ncsu.edu. Setting for the ConfBoard digital display software. See https://http://go.ncsu.edu/confboard",
+  "options": {
+    "remove_empty_properties": true
+  },
+
+  "properties": {
+    "baseURL": {
+      "title": "Base URL",
+      "description": "The base URL to the folder containing the images.txt file or JSON information. Do NOT include trailing backslash.",
+      "type": "string",
+      "default": "https://storage.googleapis.com/confboard",
+      "options": {
+        "infoText": "Key name: baseURL"
+      },
+      "links": [
+        {
+          "rel": "Documentation",
+          "href": "https://go.ncsu.edu/confboard#h.b53vj55iw28d"
+        }
+      ]
+    },
+    "shouldUseJSON": {
+      "title": "Should Use JSON",
+      "description": "Base URL is a JSON file or feed not text list of URIs.",
+      "type": "boolean",
+      "default": false,
+      "options": {
+        "infoText": "Key name: shouldUseJSON"
+      },
+      "links": [
+        {
+          "rel": "Documentation",
+          "href": "https://go.ncsu.edu/confboard#h.as2mra9pviie"
+        }
+      ]
+    },
+    "shouldDisplayName": {
+      "title": "Should Display Name",
+      "description": "Show name of device on screen.",
+      "type": "boolean",
+      "default": true,
+      "options": {
+        "infoText": "Key name: shouldDisplayName"
+      },
+      "links": [
+        {
+          "rel": "Documentation",
+          "href": "https://go.ncsu.edu/confboard#h.8bfb1vc4d0zo"
+        }
+      ]
+    },
+    "groupLabel": {
+      "title": "Group Label",
+      "description": "String to be added after the baseURL.  Using images.txt this adds after the baseURL and before images.txt.  Using JSON this adds after the baseURL. Can be used to specify a folder on web server with different images.txt or as ? parameter string for JSON feed.",
+      "type": "string",
+      "default": "test",
+      "options": {
+        "infoText": "Key name: groupLabel"
+      },
+      "links": [
+        {
+          "rel": "Documentation",
+          "href": "https://go.ncsu.edu/confboard#h.8tq6r5jg8sne"
+        }
+      ]
+    }, 
+    "reloadContentTimer": {
+      "title": "Reload Content Timer",
+      "description": "Time between reloading the list of image links.",
+      "type": "integer",
+      "default": "270",
+      "options": {
+        "infoText": "Key name: reloadContentTimer"
+      },
+      "links": [
+        {
+          "rel": "Documentation",
+          "href": "https://go.ncsu.edu/confboard/confboard#h.97mek2dcu8c"
+        }
+      ]
+    }, 
+    "rotateImageTimer": {
+      "title": "Rotate Image Timer",
+      "description": "Username associated with the device in Jamf Pro (computer-level profiles)",
+      "type": "integer",
+      "default": "30",
+      "options": {
+        "infoText": "Key name: rotateImageTimer"
+      },
+      "links": [
+        {
+          "rel": "Documentation",
+          "href": "https://go.ncsu.edu/confboard#h.wzrbt7u86mlvl"
+        }
+      ]
+    }
+    }
+}
